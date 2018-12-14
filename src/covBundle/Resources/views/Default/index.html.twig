@@ -1,0 +1,153 @@
+{% extends'base.html.twig' %}
+{% block contenu %}
+
+    <!--./ Gereral Subhead End --><div class="general-subhead">
+    <h1>LogIn :</h1>
+</div>
+    <section>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 col-md-6  col-sm-12">
+
+
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="form-group">
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <h3>Se connecter : </h3>
+                                <hr/>
+                                </br>
+                                <div class="form-group">
+                                    {{ form_start(form) }}
+                                    {{ form_widget(form.login,{'attr':{'class':'form-control','required':'required','placeholder':'Votre Login'}}) }}
+                                        </br>
+                                    {{ form_widget(form.password,{'attr':{'class':'form-control','required':'required','placeholder':   'Votre Mot de Passe'}}) }}
+
+                                        <a href="#">Mot de passe oublié ?</a>
+                                        </br>
+                                        </br>
+                                        {{ form_widget(form.Connexion,{'attr':{'class':'btn btn-primary'}}) }}
+                                        <h5>Vous n'avez pas de compte ? <a href="{{ path('displayajout') }}">inscription</a></h5>
+                                    {{ form_end(form) }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+
+                                <div class="form-group">
+
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+    <div class="div-social-top">
+
+    </div>
+
+    <div id="footer-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4" id="about-ftr">
+                    <i class="fa fa-building fa-2x"></i>
+                    <span>Les fonctionnalités offertes par Karhbetna.tn sont :</span>
+                    <p>
+                        -S’inscrire ou se connecte. </br>
+                        -Modifier le profil.</br>
+                        -Lister et effectuer une recherche de covoiturage.</br>
+                        -Sauvegarder une offre de covoiturage.</br>
+                        -Publier / modifier / supprimer une offre de covoiturage.</br>
+                        -Publier / modifier / supprimer une demande de covoiturage.</br>
+                        -Ajouter / consulter / supprimer une réservation.</br>
+                        -Réclamer sur un couvoiturage.</br>
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <i class="fa fa-paper-plane-o fa-2x"></i>
+                    <span>Lisez Aussi Sur Karhbetna.tn : </span>
+
+                    <div id="blog-footer-div">
+                        <p>L’inscription est facile.
+                            La liste des préférences à remplir est exhaustive à souhait allant de vos goûts musicaux
+                            à votre dépendance au tabac ou votre amour pour les animaux.
+                            Le tout dans le but d’éviter de vous faire voyager
+                            avec un fumeur propriétaire d’un Labrador si vous êtes non-fumeur et allergique aux poils de chien. Si aucune offre n’est
+                            disponible pour le trajet que vous souhaitez réaliser,
+                            vous pouvez créer une alerte qui vous tiendra informé des nouvelles possibilités de covoiturage.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <i class="fa fa-sliders fa-2x"></i>
+                    <span>L'équipe :</span></br>
+                    -Rédacteur en chef : BEN HENDA Houyem.
+                    <br />
+                    -Collaborateurs: BEN AMMAR Leila.
+                    <br />
+                    -Nous contacter: houyem.benhenda@gmail.com </br>
+                    ou bien : leila.benn.ammar@gmail.com
+                    <br />
+                    <br />
+                    <i class="fa fa-sliders fa-2x"></i>
+                    <span>Nous suivre :</span></br>
+                    <a href="#"><i class="fa fa-facebook-square fa-3x color-facebook"></i></a>
+                    <form role="form">
+                        <div class="input-group">
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--./ footer-sec  End -->
+    <div id="footser-end">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--./ footer-sec  End -->
+    <div id="footser-end">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </section>
+        {% endblock %}
+    {% block javascripts %}
+    <!--./ footer-end End -->
+    <!--  Jquery Core Script -->
+    <script src="{{ asset('template/assets/js/jquery-1.10.2.js') }}"></script>
+    <!--  Core Bootstrap Script -->
+    <script src="{{ asset('template/assets/js/bootstrap.js') }}"></script>
+    <!--  Custom Scripts -->
+    <script src="{{ asset('template/assets/js/custom.js') }}"></script>
+
+{% endblock %}
+

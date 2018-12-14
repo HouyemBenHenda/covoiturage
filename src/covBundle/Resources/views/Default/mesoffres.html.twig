@@ -1,0 +1,52 @@
+{% extends'base1.html.twig' %}
+{% block contenu %}
+    <div class="div-social-top">
+        <ul id="onglets">
+
+            <li><a href="{{ path('display_compte') }}">Modifier le profil </a></li>
+            <li><a href="{{ path('historique') }}"> Historique personnel </a></li>
+            <li><a href="{{ path('mesoffres') }}"> Mes Offres </a></li>
+            <li><a href="{{ path('mes_reservations') }}"> Mes Réservations</a></li>
+
+
+        </ul>
+    </div>
+
+    <div class="portlet-body">
+        <table class="table table-striped table-bordered table-hover" id="sample_1">
+            <thead>
+
+
+            <th>Date</th>
+            <th>Heure</th>
+            <th>Nom Voiture</th>
+            <th>Image Voiture</th>
+            <th>Ville de Départ</th>
+            <th>Ville d'Arrivée</th>
+            <th>Nombre de place</th>
+            <th>Prix</th>
+            <th>Description</th>
+            <th>Opérations</th>
+
+            </thead>
+
+            {% for offre in offres%}
+                <tbody>
+
+                <td>{{ offre.date.format('Y-m-d') }}</td>
+                <td>{{ offre.heure.format("h:m:s") }}</td>
+                <td>{{ offre.nomVoiture }}</td>
+                <td><img src="{{ asset('uploads/voitures/') }}{{ offre.imageVoiture}}" width="110" height="110"/></td>
+                <td>{{ offre.villeDep }}</td>
+                <td>{{ offre.villeArr}}</td>
+                <td>{{ offre.nbrePlace }}</td>
+                <td>{{ offre.prix }}</td>
+                <td>{{ offre.description }}</td>
+                <td><a href="{{ path('cov_offre_delete_offre',{"offre":offre.id}) }}"> Supprimer </a><a href="{{ path('display_update_offre',{"offre":offre.id}) }}">Modifier</a></td>
+                </tbody>
+            {% endfor %}
+
+
+        </table>
+    </div>
+{% endblock %}

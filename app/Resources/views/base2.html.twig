@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <![endif]-->
+    <title>Covoiturage</title>
+    <!--  Bootstrap Style -->
+    <link href="{{ asset('template/assets/css/bootstrap.css') }}" rel="stylesheet" />
+    <!--  Font-Awesome Style -->
+    <link href="{{ asset('template/assets/css/font-awesome.min.css') }}" rel="stylesheet" />
+    <!--  Font-Awesome Animation Style -->
+    <link href="{{ asset('template/assets/css/font-awesome-animation.css') }}" rel="stylesheet" />
+    <!--  Pretty Photo Style -->
+    <link href="{{ asset('template/assets/css/prettyPhoto.css') }}" rel="stylesheet" />
+    <!--  Google Font Style -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <!--  Custom Style -->
+    <link href="{{ asset('template/assets/css/style.css') }}" rel="stylesheet" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top menu-back">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">
+                <img src="{{ asset('template/assets/img/logo.png') }}" class="navbar-brand-logo " alt="" />
+            </a>
+        </div>
+        <div class="navbar-collapse collapse" >
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown">
+                    <a href="{{ path('acceuil') }}">Acceuil<i class="fa fa-folder-open-o"></i></a>
+
+                </li>
+                <li class="dropdown">
+                    <a href="{{ path('apropos') }}">A Propos<i class="fa fa-folder-open-o"></i>
+
+                    </a>
+
+                </li>
+
+                <li class="dropdown">
+                    <a href="{{ path('displayajout') }}">S'inscrire<i class="fa fa-image"></i>
+                    </a>
+
+                </li>
+
+
+                <li class="dropdown">
+                    <a href="authentification.html">Connecter <i class="fa fa-bars"></i>
+                    </a>
+
+                </li>
+                <li class="dropdown">
+                    <a href="contact.html">Contacter nous <i class="fa fa-globe"></i>
+
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<!--./ Top Menu End -->
+
+<!--./ Social Div End -->
+<div id="main-slider">
+
+    <div id="carousel-example" class="carousel slide" data-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="item active">
+
+                <img src="assets/img/1.jpg" alt="" />
+
+            </div>
+            <div class="item">
+                <img src="assets/img/3.jpg" alt="" />
+
+            </div>
+            <div class="item">
+                <img src="assets/img/2.jpg" alt="" />
+
+            </div>
+        </div>
+        <!--INDICATORS-->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example" data-slide-to="1"></li>
+            <li data-target="#carousel-example" data-slide-to="2"></li>
+        </ol>
+        <!--PREVIUS-NEXT BUTTONS-->
+        <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+            <i class="fa fa-angle-left fa-3x control-icon clr-main"></i>
+        </a>
+        <a class="right carousel-control" href="#carousel-example" data-slide="next">
+            <i class="fa fa-angle-right fa-3x control-icon clr-main"></i>
+        </a>
+    </div>
+
+</div>
+<!--./ Main Slider End -->
+<div id="welocme-note">
+
+    <div class="div-social-top">
+        <i class=""></i>
+        <i class="fa fa-globe "></i>Trouver un covoiturage et des personnes avec qui partager un voyage
+    </div>
+
+</div>
+<!--./ Welcome Section End -->
+<section id="home-service" style="margin-top:20px;">
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-4 col-md-4  col-sm-4 "  >
+                <img src="assets/img/passenger.png" alt="" />
+                <h4><strong>VOUS ÊTES PASSAGER ?</strong> </h4>
+                <p>
+                    Si vous n'avez pas de véhicule, le covoiturage vous permet de vous déplacer moins cher avec des gens sympas !
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4  col-sm-4" >
+
+            </div>
+            <div class="col-lg-4 col-md-4  col-sm-4" >
+                <img src="assets/img/driver.png" alt="" />
+                <h4><strong>VOUS ÊTES CONDUCTEUR ? </strong></h4>
+                <p>
+                    Économique, le covoiturage vous permet de proposer des places et de partager les frais, avec eux.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!--./ Home Service End -->
+<section id="vedio-sec">
+    <div class="container">
+        <div class="row pad-top-botm">
+            <div class="col-lg-6 col-md-6">
+                <h2>T7EB TAWSSILA ? </h2>
+                <p>
+                    Karhbetna est un site de covoiturage gratuit qui permet aux conducteurs et aux passagers de
+                    se mettre en relation pour convenir d'un covoiturage en Tunisie. Les conducteurs peuvent
+                    publier gratuitement leurs annonces et les passagers qui cherchent un trajet peuvent
+                    se mettre en contact directement avec le conducteur via une messagerie interne, téléphone ou Email. Les avantages
+                    du covoiturage sont nombreux : gain de temps, économie, simplicité... mais surtout on adopte un comportement écologique !
+                </p>
+
+            </div>
+
+            <div class="photogauche" >
+                <img src="assets/img/444.png" alt="" />
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--./ vedio-sec End -->
+<div class="div-social-top">
+    <i class=""></i>
+    <span>Le site qui permet à des centaines de personnes de se déplacer autrement en alliant :économie, écologie, convivialité </span>
+</div>
+
+<!--./ Testimonials End -->
+
+<section id="service-info">
+    <div class="container">
+
+        <div class="row pad-top-botm">
+            <div class="col-lg-4 col-md-4">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class=" fa fa-folder-open-o fa-4x rotate-icon "></i>
+
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Solution économique</h3>
+                        <p>
+                            Le partage des frais de voyage permet de voyager à petit prix.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="fa fa-power-off fa-4x rotate-icon "></i>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Solution écologique et pratique</h3>
+                        <p>
+                            La réduction du trafic routier permet de fluidifier la circulation et
+                            réduire les émissions de CO2, et également de pouvoir voyager à n'importe quel moment et lieu.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="fa fa-paper-plane-o fa-4x rotate-icon "></i>
+                    </div>
+                    <div class="media-body">
+                        <h3 class="media-heading">Site sécurisé</h3>
+                        <p>
+                            Le site propose une connexion fiable et sécurisée et respecte la confidentialité des utilisateurs.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row pad-top-botm ">
+
+
+            <div class="col-lg-6 col-md-6">
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--./ Service info Section End -->
+<div class="just-stats">
+    <div class="container">
+        <div class="row ">
+
+        </div>
+    </div>
+</div>
+<!--./ stats div end -->
+<div id="media-sec">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12" >
+                <div class="text-center">
+                    <h3>karhbetna.com, la simplicité fait la beauté.</h3>
+
+                    <br />
+                    <br />
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <blockquote>
+                    <p>On aime l’option « Ladies Only »: Il est possible que certaines femmes se sentent plus
+                        à l’aise avec d’autres femmes, en particulier à l’occasion de leur premier covoiturage.
+                    </p>
+
+                </blockquote>
+
+            </div>
+            <div class="col-lg-6 col-md-6">
+                <blockquote>
+                    <p>Les prix sont souvent très intéressants, notamment
+                        si vous effectuez des liaisons régulières entre deux destinations. Idéal pour les gens qui travaillent à Tunis.</p>
+
+                </blockquote>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!--./ Media Section End -->
+<div id="footer-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-4" id="about-ftr">
+                <i class="fa fa-building fa-2x"></i>
+                <span>Les fonctionnalités offertes par Karhbetna.tn sont :</span>
+                <p>
+                    -S’inscrire ou se connecte. </br>
+                    -Modifier le profil.</br>
+                    -Lister et effectuer une recherche de covoiturage.</br>
+                    -Sauvegarder une offre de covoiturage.</br>
+                    -Publier / modifier / supprimer une offre de covoiturage.</br>
+                    -Publier / modifier / supprimer une demande de covoiturage.</br>
+                    -Ajouter / consulter / supprimer une réservation.</br>
+                    -Réclamer sur un couvoiturage.</br>
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <i class="fa fa-paper-plane-o fa-2x"></i>
+                <span>Lisez Aussi Sur Karhbetna.tn : </span>
+
+                <div id="blog-footer-div">
+                    <p>L’inscription est facile.
+                        La liste des préférences à remplir est exhaustive à souhait allant de vos goûts musicaux
+                        à votre dépendance au tabac ou votre amour pour les animaux.
+                        Le tout dans le but d’éviter de vous faire voyager
+                        avec un fumeur propriétaire d’un Labrador si vous êtes non-fumeur et allergique aux poils de chien. Si aucune offre n’est
+                        disponible pour le trajet que vous souhaitez réaliser,
+                        vous pouvez créer une alerte qui vous tiendra informé des nouvelles possibilités de covoiturage.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+                <i class="fa fa-sliders fa-2x"></i>
+                <span>L'équipe :</span></br>
+                -Rédacteur en chef : BEN HENDA Houyem.
+                <br />
+                -Collaborateurs: BEN AMMAR Leila.
+                <br />
+                -Nous contacter: houyem.benhenda@gmail.com </br>
+                ou bien : leila.benn.ammar@gmail.com
+                <br />
+                <br />
+                <i class="fa fa-sliders fa-2x"></i>
+                <span>Nous suivre :</span></br>
+                <a href="#"><i class="fa fa-facebook-square fa-3x color-facebook"></i></a>
+                <form role="form">
+                    <div class="input-group">
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--./ footer-sec  End -->
+<div id="footser-end">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--./ footer-end End -->
+<!--  Jquery Core Script -->
+<script src="assets/js/jquery-1.10.2.js"></script>
+<!--  Core Bootstrap Script -->
+<script src="assets/js/bootstrap.js"></script>
+<!--  Custom Scripts -->
+<script src="assets/js/custom.js"></script>
+
+</body>
+</html>

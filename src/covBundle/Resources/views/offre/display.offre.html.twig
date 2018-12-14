@@ -1,0 +1,100 @@
+{% extends "base1.html.twig" %}
+
+{% block title %}Offre{% endblock %}
+
+{% block contenu %}
+    <br>
+    <section class="simple-section">
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-6 col-sm-offset-3">
+                   {{ form_start(form) }}
+
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="ville_dep"><i class="fa fa-info"></i></span>
+                                {{ form_widget(form.villeDep,{'attr':{'class':'form-control','placeholder':'Ville de départ','aria-describedby':'ville_dep'}}) }}
+                            </div>
+
+                        </div>
+
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="ville_arr"><i class="fa fa-info"></i></span>
+                                {{ form_widget(form.villeArr,{'attr':{ 'class':'form-control','placeholder':'Ville d\'arriver', 'aria-describedby':'ville_arr'}}) }}
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="date"><i class="fa fa-calendar-o"></i></span>
+                                {{ form_widget(form.date,{'attr':{'class':'form-control dtp','placeholder':'Date de départ','aria-describedby':'date'}}) }}
+                            </div>
+
+                        </div>
+
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="heure"><i class="fa fa-calendar-o"></i></span>
+                                {{ form_widget(form.heure,{'attr':{ 'class':'form-control dtp','placeholder':'Heure de départ','aria-describedby':'heure'}}) }}
+                            </div>
+
+                        </div>
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="nb_place"><i class="fa fa-calendar-o"></i></span>
+                                {{ form_widget(form.nbrePlace,{'attr':{ 'class':'form-control dtp','placeholder':'Nombre de place','aria-describedby':'nb_place'}}) }}
+                            </div>
+
+                        </div>
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="nom_v"><i class="fa fa-info"></i></span>
+                                {{ form_widget(form.nom_voiture,{'attr':{'class':'form-control','placeholder':'Nom du véhicule','aria-describedby':'nom_v'}}) }}
+                            </div>
+
+                        </div>
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="vehicule"><i class="fa fa-user"></i></span>
+                                {{ form_widget(form.image_voiture,{'attr':{'class':'form-control','placeholder':'Image du véhicule', 'aria-describedby':'vehicule'}}) }}
+                            </div>
+
+                        </div>
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="prix"><i class="fa fa-info"></i></span>
+                                {{ form_widget(form.prix,{'attr':{ 'class':'form-control','placeholder':'Prix' ,'aria-describedby':'prix'}}) }}
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="form-group ">
+                            <div class="input-group">
+                                <span class="input-group-addon" id="desc"><i class="fa fa-keyboard-o"></i></span>
+                                {{ form_widget(form.description,{'attr':{'class':'form-control', 'placeholder':'Description' ,'aria-describedby':'desc'}}) }}
+                            </div>
+
+                        </div>
+
+                        <div class="form-group">
+                            {{ form_widget(form.Submit,{'attr':{ 'class':'btn btn-primary'}}) }}
+
+                        </div>
+
+
+
+                    {{ form_end(form) }}
+                </div>
+            </div>
+
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,4 @@
+services:
+#    cov.example:
+#        class: covBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
